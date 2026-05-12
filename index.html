@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Sales Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>E-Commerce Sales Dashboard</h1>
+
+        <div class="card">
+            <h2>Total Sales</h2>
+            <p>{{ sales }}</p>
+        </div>
+
+        <div class="card">
+            <h2>Total Orders</h2>
+            <p>{{ orders }}</p>
+        </div>
+
+        <div class="card">
+            <h2>Top Category</h2>
+            <p>{{ category }}</p>
+        </div>
+
+        <div class="card">
+            <h2>Top Product</h2>
+            <p>{{ product }}</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
